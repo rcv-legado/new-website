@@ -2,7 +2,7 @@
 
     <nav class="site-nav">
         <div class="me section">
-            <a href="/" class="site-title">
+            <a href="{{site.baseurl}}/" class="site-title">
                 <img src="{{site.baseurl}}/img/stefano_head.jpg" class="avatar"><br>
                 Stefano Meschiari
             </a>
@@ -11,7 +11,10 @@
             </div>
         </div>
         <div class="site-pages section">
-            {% for my_page in site.pages %}
+            
+            {% for index in site.data.sidebar.order %}
+            {% assign my_page = site.pages[index] %}
+            
             {% if my_page.title %}
             <a class="ui button compact labeled icon page" href="{{ my_page.url | prepend: site.baseurl }}">
                 <i class="{{my_page.icon}} icon"></i>

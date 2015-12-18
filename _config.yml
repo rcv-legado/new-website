@@ -19,3 +19,5 @@ github_username:  stefano-meschiari
 markdown: kramdown
 exclude:
   - public/node_modules
+
+  

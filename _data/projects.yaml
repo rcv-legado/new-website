@@ -1,0 +1,28 @@
+- title: Systemic
+  url: /systemic
+  description: Discover exoplanets using real astronomical data.
+  img: /img/systemic_live.png
+
+- title: Super Planet Crash
+  url: /spc
+  description: Race against gravity to create a crowded planetary system.
+  img: /img/spc.png
+
+- title: SAVE/Point
+  url: http://www.save-point.io
+  external: true
+  description: A collaboration of astronomers and educators dedicated to developing games and apps to teach astronomical concepts.
+  img: /img/orbits.png
+
+- title: Ask an Astronomer
+  url: http://askanastronomer.org
+  external: true
+  class: rounded
+  description: A website that connects teachers, students, and the general public to real astronomers.
+  img: /img/aaa.jpg
+
+- title: latex2exp
+  url: https://github.com/stefano-meschiari/latex2exp
+  external: true
+  description: A package to typeset math formulas in R using LaTeX notation.
+  img: /img/latex2exp.png

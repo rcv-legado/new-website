@@ -18,11 +18,20 @@ permalink: /
                 </div>
                 <div class="description">
                     <p>
-                        Hello! I am an astronomer, data scientist,
-                        open science enthusiast, and software developer.                        
-                    </p>                
-                </div>
-                
+                        Hello! I am a postdoctoral astronomer at the University of
+                        Texas at Austin, working to find new exoplanets and understand
+                        how they formed.
+                    </p>
+                    <p>
+                        I love modelling data, and I especially enjoy creating tools that empower
+                        others to understand and extract meaning from data. 
+                    </p>
+                    <p>
+                        Finally, I am passionate about open-source software development. I create
+                        cool-ish things like games for astronomy education, code to discover exoplanets,
+                        and all sorts of small toys and hacks.
+                    </p>
+                </div>                
             </div>
             <div class="extra content">
                 <span>
@@ -69,6 +78,12 @@ permalink: /
                 Read more...
             </a>
         </div>
+        <div class="ui fluid card">
+            <div class="content">
+                <div class="header">What am I working on now?</div>
+                
+            </div>
+        </div>
     </div>
     <div class="column">
         <div class="ui fluid card">            
@@ -113,63 +128,33 @@ permalink: /
             </div>
             <div class="content">
                 <div class="ui divided items">
+                    {% for project in site.data.projects %}
                     <div class="item">
-                        <a class="ui tiny image" href="/systemic">
-                            <img src="{{site.baseurl}}/img/systemic_live.png">
+                        {% if project.external %}
+                        <a class="ui tiny image {{ project.class }}" href="{{ project.url }}" target="_new">
+                            <img src="{{ site.baseurl }}{{ project.img }}">
                         </a>
-                    <div class="content">
-                        <a class="header" href="{{site.baseurl}}/systemic">Systemic</a>
-                        <div class="description">
-                            Discover exoplanets using real astronomical data.
-                        </div>
-                    </div>
-                    </div>
-                    <div class="item">
-                        <a class="ui tiny image" href="/spc">
-                            <img src="{{site.baseurl}}/img/spc.png">
+                        {% else %}
+                        <a class="ui tiny image {{ project.class }}" href="{{ site.baseurl }}/{{ project.url }}" target="_new">
+                            <img src="{{ site.baseurl }}{{ project.img }}">                            
                         </a>
+                        {% endif %}
                         <div class="content">
-                            <a class="header" href="{{site.baseurl}}/spc">Super Planet Crash</a>
+                            {% if project.external %}
+                            <a class="header" href="{{ project.url }}" target="_new">
+                                {{ project.title }}
+                            </a>
+                            {% else %}
+                            <a class="header" href="{{ site.baseurl }}/{{ project.url }}" target="_new">
+                                {{ project.title }}
+                            </a>
+                            {% endif %}
                             <div class="description">
-                                Discover exoplanets using real astronomical data.
-                            </div>
+                                {{ project.description }}
+                            </div>                        
                         </div>
                     </div>
-                    <div class="item">
-                        <a class="ui tiny image" href="http://save-point.io">
-                            <img src="{{site.baseurl}}/img/orbits.png">
-                        </a>
-                        <div class="content">
-                            <a class="header" href="http://save-point.io">SAVE/Point</a>
-                            <div class="description">
-                                A collaboration of astronomers and educators dedicated to developing games and apps to teach astronomical concepts.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="ui tiny image" href="http://askanastronomer.org">
-                            <img class="rounded" src="{{site.baseurl}}/img/aaa.jpg">
-                        </a>
-                        <div class="content">
-                            <a class="header" href="http://askanastronomer.org">Ask An Astronomer</a>
-                            <div class="description">
-                                A website that connects teachers, students, and the general public to
-                                real astronomers.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="ui tiny image" href="https://github.com/stefano-meschiari/latex2exp">
-                            <img src="{{site.baseurl}}/img/latex2exp.png">
-                        </a>
-                        <div class="content">
-                            <a class="header" href="https://github.com/stefano-meschiari/latex2exp">latex2exp</a>
-                            <div class="description">
-                                A package to typeset math formulas in R using LaTeX notation.
-                            </div>
-                        </div>
-                    </div>
-                    
+                    {% endfor %}                    
                 </div>
             </div>
             <a class="ui bottom attached button" href="/projects">
