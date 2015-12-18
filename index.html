@@ -1,23 +1,144 @@
 ---
-layout: default
+layout: page
+title: About Me
+icon: child
+permalink: /
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="ui two column grid">
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="image">
+                <img src="/img/stefano.jpg">
+            </div>
+            <div class="content">
+                <div class="header">Stefano Meschiari</div>
+                <div class="meta">
+                    W. J. McDonald Postdoctoral Fellow<br>
+                    University of Texas at Austin
+                </div>
+                <div class="description">
+                    <p>
+                        Hello! I am an astronomer, data scientist,
+                        open science, and education enthusiast.
+                    </p>                
+                </div>
+            </div>
+            <div class="extra content">
+                <span>
+                    <i class="italy flag">
+                        
+                    </i>
+                    From Modena, Italy
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui fluid card">            
+            <div class="content">
+                <div class="header">
+                    My interests
+                </div>
+            </div>
+            <div class="content pills">
+                <h4 class="ui sub header">I work on:</h4>
+                    <div class="ui label teal">Astrophysics</div>
+                    <div class="ui label teal">Science education</div>
+                    <div class="ui label teal">Citizen science</div>
+                    <div class="ui label teal">Gamified education</div>
+                    <div class="ui label teal">Data analysis tools</div>
+                    <div class="ui label teal">Stats</div>
+                    <div class="ui label teal">Numerical simulations</div>
+                    <div class="ui label teal">Visualizations</div>
+                    <div class="ui label teal">Web apps</div>                    
+            </div>
+            <div class="content pills">
+                <h4 class="ui sub header">Using:</h4>
+                <div class="ui label olive">R</div>
+                <div class="ui label olive">JavaScript</div>
+                <div class="ui label olive">HTML5/CSS</div>
+                <div class="ui label olive">C</div>
+                <div class="ui label olive">Java</div>
+                <div class="ui label olive">Lua</div>
+                <div class="ui label olive">Git + Emacs + Fish</div>                
+            </div>
+            <a class="ui bottom attached button" href="https://github.com/stefano-meschiari/">
+                    <i class="github icon"></i>
+                    See my stuff on GitHub
+            </a>
+        </div>
+        <div class="ui fluid card projects">            
+            <div class="content">
+                <div class="header">
+                    My projects
+                    <a class="ui right floated button small compact" href="/projects">See all</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="ui divided items">
+                    <div class="item">
+                        <a class="ui tiny image" href="/systemic">
+                            <img src="/img/systemic_live.png">
+                        </a>
+                    <div class="content">
+                        <a class="header" href="/systemic">Systemic</a>
+                        <div class="description">
+                            Discover exoplanets using real astronomical data.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item">
+                        <a class="ui tiny image" href="/spc">
+                            <img src="/img/spc.png">
+                        </a>
+                        <div class="content">
+                            <a class="header" href="/spc">Super Planet Crash</a>
+                            <div class="description">
+                                Discover exoplanets using real astronomical data.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="ui tiny image" href="http://save-point.io">
+                            <img src="/img/orbits.png">
+                        </a>
+                        <div class="content">
+                            <a class="header" href="http://save-point.io">SAVE/Point</a>
+                            <div class="description">
+                                A collaboration of astronomers and educators dedicated to developing games and apps to teach astronomical concepts.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="ui tiny image" href="http://askanastronomer.org">
+                            <img class="rounded" src="/img/aaa.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="header" href="http://askanastronomer.org">Ask An Astronomer</a>
+                            <div class="description">
+                                A website that connects teachers, students, and the general public to
+                                real astronomers.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="ui tiny image" href="https://github.com/stefano-meschiari/latex2exp">
+                            <img src="/img/latex2exp.png">
+                        </a>
+                        <div class="content">
+                            <a class="header" href="https://github.com/stefano-meschiari/latex2exp">latex2exp</a>
+                            <div class="description">
+                                A package to typeset math formulas in R using LaTeX notation.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <a class="ui bottom attached button" href="/projects">
+                <i class="configure icon"></i>
+                See more projects...
+            </a>
+        </div>
+    </div>
 </div>

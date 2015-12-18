@@ -1,0 +1,118 @@
+body {
+  background: rgb(240, 240, 240) !important;
+}
+
+
+
+.site-header {
+  background:url('/img/header.jpg');
+  background-size:cover;
+  position:fixed;
+  width:$sidebar-size;
+  left:0px;
+  top:0px;
+  bottom:0px;
+  border:none;
+  color:white;
+  overflow:auto;
+  line-height:1rem;
+}
+
+.site-header .section {
+  padding-bottom:1rem;
+  border-bottom:1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom:1rem;
+}
+
+.page-content {
+  margin-left:$sidebar-size;
+}
+
+.site-nav {
+  float:none;
+  text-align:center;
+  line-height:3rem;
+  padding:30px;
+}
+
+.me {
+  padding:1rem;
+}
+
+
+.site-header img {
+  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius:8px;
+}
+
+.me img.avatar {
+  width:80%;
+  border-radius:1000px;
+}
+
+
+.site-title, .site-title:visited {
+  float:none;
+  color:rgb(255, 255, 255);
+  font-weight:400;
+  line-height:1rem;
+  letter-spacing:initial;
+  font-size:1rem;
+}
+
+.site-pages .ui.button {
+  background:white;
+  box-shadow:0px 1px 1px rgba(100, 100, 100, 0.5);
+}
+
+.ui.button.labeled {
+  width:100%;
+}
+
+.site-title .head {
+  width:50px;
+  border-radius:100px;
+  border:2px solid rgba(255, 255, 255, 0.4);
+  float:left;
+  margin-right:10px;
+}
+
+.subtitle {
+  font-weight:100;
+  text-transform:lowercase;
+  font-variant:small-caps;
+  line-height:1rem;
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.icon-label {
+  line-height:1rem;
+  font-size:1rem; 
+}
+
+.ui.grid.apps {
+//  margin-left:1.5rem;
+//  margin-right:1.5rem;
+}
+.icon-label img {
+  margin-bottom:10px;
+}
+
+.page {
+}
+
+footer.site-footer {
+  border-top:none;
+}
+
+.pills .ui.label {
+  margin-bottom:5px;
+}
+
+article.ui.segment {
+  padding:1.5rem;
+}
+
+img.rounded {
+  border-radius:10px !important;
+}
