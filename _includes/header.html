@@ -22,20 +22,24 @@
             </a>
             {% endif %}
             {% endfor %}
+        </div>
+            <a class="ui button compact circular icon" title="Email me" href="mailto:{{ site.data.env.email }}">
+                <i class="mail outline icon"></i>
+            </a>
 
-            <a class="ui button compact circular icon">
+            <a class="ui button compact circular icon" title="GitHub">
                 <i class="github icon"></i>
             </a>
 
-            <a class="ui button compact circular icon">
+            <a class="ui button compact circular icon" href="https://twitter.com/{{ site.data.env.twitter }}" title="Tweet @ me">
                 <i class="twitter icon"></i>
             </a>
 
-            <a class="ui button compact circular icon">
+            <a class="ui button compact circular icon" title="Linkedin">
                 <i class="linkedin icon"></i>
             </a>
 
             
-        </div>
+
     </nav>
 </header>
